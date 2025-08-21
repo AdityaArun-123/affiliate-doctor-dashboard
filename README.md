@@ -13,7 +13,9 @@ A fully responsive Affiliate Doctor Dashboard built with **React.js**, styled us
 - React.js
 - CSS
 
----
+## Live Preview of Project
+
+https://affiliate-doctor-dashboard-project.netlify.app/
 
 ## Installation & Run Locally
 
