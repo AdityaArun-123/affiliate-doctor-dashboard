@@ -1,0 +1,9 @@
+.earning-history-section .paid-status{
+    color: green;
+    font-size: 14px;
+}
+
+.earning-history-section .pending-status{
+    color: red;
+    font-size: 14px;
+}

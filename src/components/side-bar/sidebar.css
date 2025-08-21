@@ -1,0 +1,199 @@
+    .sidebar {
+        width: 230px;
+        height: calc(100% - 150px);
+        background: white;
+        border-radius: 0 20px 20px 0;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+        padding: 0;
+        font-weight: 600;
+        position: absolute;
+        top: 80px;
+        left: 0;
+    }
+
+    .sidebar-content {
+        height: 100%;
+        overflow: hidden;
+        clip-path: inset(0 round 0 20px 20px 0);
+        overflow-y: auto;
+        padding: 15px 0 10px 0;
+        border-radius: 0 20px 20px 0;
+    }
+
+    .sidebar-content::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .sidebar-content::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 10px;
+    }
+
+    .sidebar-content::-webkit-scrollbar-thumb {
+        background: grey;
+        border-radius: 10px;
+    }
+
+    .sidebar-content::-webkit-scrollbar-thumb:hover {
+        background: lightgrey;
+    }
+
+    .sidebar-content h4 {
+        font-size: 18px;
+        color: #444;
+        padding: 0 20px;
+        margin-bottom: 12px;
+    }
+
+    .profile-and-notification-section {
+        display: none;
+    }
+
+    .profile-and-notification-section .notification-and-settings-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px 5px 10px;
+        border-bottom: 2px solid #f0f0f0;
+    }
+
+    .profile-and-notification-section .notification-and-settings-box .notification-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .profile-and-notification-section .user-profile-box {
+        margin-top: 18px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-and-notification-section .user-profile-box .profile-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .profile-and-notification-section .user-profile-box .profile-info .role {
+        align-self: center;
+    }
+
+    .menu {
+        list-style: none;
+    }
+
+    .menu li {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background 0.2s ease;
+        gap: 12px;
+    }
+
+    .menu li:hover {
+        background-color: #f5f5f5;
+    }
+
+    .icon-box {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+        background-color: #f4f6f8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .icon-box img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .submenu {
+        max-height: 0;
+        overflow: hidden;
+        transition:
+            max-height 1s ease-out;
+        margin-top: 0;
+    }
+
+    .submenu.active {
+        max-height: 200px;
+    }
+
+    .submenu.active .menu li:hover {
+        background-color: initial;
+    }
+
+    .submenu:not(.active) {
+        transition:
+            max-height 0.5s ease-out;
+    }
+
+    .submenu li {
+        color: #555;
+        transition: color 0.3s ease-in-out;
+        padding: 10px 5px 10px 53px !important;
+        font-size: 14px;
+    }
+
+    .submenu li.active {
+        color: #09672a;
+    }
+
+    .submenu li:hover {
+        color: #09672a;
+    }
+
+    .menu-text {
+        font-size: 14px;
+        color: #555;
+    }
+
+    .menu-text.active {
+        font-weight: bolder;
+        color: #09672a;
+    }
+
+    .affiliate-li,
+    .wallet-li {
+        display: flex;
+        flex-direction: column;
+        align-items: initial !important;
+    }
+
+    .affiliate-li {
+        padding-bottom: 0 !important;
+    }
+
+    .affiliate,
+    .wallet {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .affiliate .menu-text,
+    .wallet .menu-text {
+        margin-left: 13px !important;
+    }
+
+    .affiliate .right-icon,
+    .wallet .right-icon {
+        width: 10px;
+        height: 10px;
+        color: #999;
+        transform: rotateZ(0deg);
+        transition: transform 0.3s ease;
+        position: absolute;
+        right: 4px;
+    }
+
+    .affiliate .right-icon.active {
+        transform: rotateZ(90deg);
+    }

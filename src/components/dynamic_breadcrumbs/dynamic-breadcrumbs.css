@@ -1,0 +1,28 @@
+.breadcrumb-container {
+    display: flex;
+    font-size: 16px;
+    width: calc(100% - 270px);
+    position: absolute;
+    top: 75px;
+    left: 260px;
+    padding: 10px 20px 15px 20px;
+}
+
+.breadcrumb-item {
+    color: #666;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.breadcrumb-item.active {
+    font-weight: 500;
+    color: #09672a;
+    cursor: initial;
+}
+
+.breadcrumb-separator {
+    margin: 0 12px;
+    color: #aaa;
+    width: 10px;
+    height: 10px;
+}

@@ -1,0 +1,573 @@
+@media(max-width : 1500px) {
+    .user-badge {
+        right: 0px;
+    }
+}
+
+@media(max-width : 1400px) {
+
+    table td,
+    table th {
+        padding: 10px;
+    }
+
+    table tbody tr td:nth-child(3) {
+        min-width: 170px;
+    }
+
+    table tbody tr td:nth-child(3) .user-name {
+        max-width: 60%;
+    }
+
+    .earning-history-section table tbody tr td:nth-child(3) {
+        min-width: 180px;
+    }
+
+    .metrics-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+}
+
+@media(max-width : 1250px) {
+
+    .main-dashboard-container,
+    .referal-tool-container,
+    .earning-history-section {
+        width: calc(100% - 250px);
+        padding: 0 20px 20px 0;
+    }
+
+    .metrics-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+    }
+
+    .metric-card {
+        padding: 25px 15px;
+    }
+
+    .metric-icon {
+        min-width: 35px;
+        height: 35px;
+    }
+
+    .metric-number {
+        font-size: 35px;
+    }
+
+    .metric-period {
+        font-size: 12px;
+        margin-left: 2px;
+    }
+
+    table tbody tr td:nth-child(4),
+    table tbody tr td:nth-child(5) {
+        min-width: 100px;
+    }
+
+    table thead tr th:nth-child(2),
+    table tbody tr td:nth-child(2) {
+        min-width: 55px;
+    }
+}
+
+@media(max-width : 1120px) {
+    .metric-value {
+        gap: 7px;
+    }
+
+}
+
+@media(max-width : 1080px) {
+    .metrics-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .metric-card {
+        padding: 25px;
+    }
+
+    .metric-icon {
+        min-width: 40px;
+        height: 40px;
+    }
+
+    .metric-value {
+        gap: 12px;
+    }
+
+    .metric-number {
+        font-size: 32px;
+    }
+
+    .metric-period {
+        font-size: 14px;
+        margin-left: 4px;
+    }
+
+    .overview-header {
+        padding: 20px 13px;
+    }
+
+    .search-and-action-box {
+        gap: 20px;
+    }
+
+    .table-actions {
+        gap: 8px;
+    }
+
+    .referal-tool-container .btn {
+        width: 150px;
+    }
+
+    .referal-tool-container .cart-discount-section .note {
+        line-height: 20px;
+    }
+
+    .product-coupan-section .product-image {
+        height: 190px;
+    }
+
+    .product-coupan-section {
+        gap: 20px;
+    }
+
+    .product-coupan-fields {
+        gap: 10px;
+    }
+
+    .product-coupan-fields input {
+        width: 80%;
+        padding: 12px 4px 12px 8px;
+    }
+
+    .product-coupan-fields .btn {
+        width: 100px;
+    }
+
+    .product-coupan-section-note {
+        font-size: smaller;
+    }
+
+    .product-link-section .dropdown::before {
+        max-width: 170%;
+    }
+}
+
+@media(max-width : 830px) {
+    .sidebar {
+        left: -120%;
+        top: 70px;
+        transition: all 0.3s ease-out;
+        z-index: 999;
+        visibility: hidden;
+    }
+
+    .sidebar.active {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        bottom: 0;
+        visibility: visible;
+        height: calc(100% - 70px);
+    }
+
+    .sidebar .profile-and-notification-section {
+        display: block;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        padding-top: env(safe-area-inset-top);
+    }
+
+    .navbar .right-section {
+        display: none;
+    }
+
+    .navbar .left-section {
+        width: 100%;
+    }
+
+    .navbar .left-section .search-box {
+        margin-left: auto;
+    }
+
+    .main-dashboard-container,
+    .referal-tool-container,
+    .earning-history-section {
+        width: 100%;
+        top: 110px;
+        left: 0;
+        padding: 0 12px 20px 12px;
+    }
+
+    .breadcrumb-container {
+        width: 100%;
+        top: 60px;
+        left: 0;
+        padding: 15px 30px;
+    }
+
+    .referal-tool-container .cart-discount-section .note {
+        line-height: 18px;
+        font-size: 11px;
+    }
+
+    .product-link-section .dropdown::before {
+        font-size: 11px;
+    }
+}
+
+@media(max-width : 580px) {
+    .metrics-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 10px;
+    }
+
+    .overview-header {
+        flex-wrap: wrap;
+        row-gap: 15px;
+    }
+
+    .search-and-action-box {
+        width: 100%;
+        margin-left: auto;
+    }
+
+    .referal-tool-container .section {
+        padding: 20px 15px;
+    }
+
+    .referal-tool-container .dropdown .selected-product {
+        font-size: 13px;
+    }
+
+    .referal-tool-container .dropdown img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .product-coupan-section .product-image {
+        width: 27%;
+        height: 140px;
+    }
+
+    .product-coupan-section {
+        gap: 12px;
+    }
+
+    .product-coupan-fields input {
+        font-size: 11px;
+    }
+
+    .product-coupan-section-note {
+        font-size: x-small;
+        margin-top: 5px;
+        padding-left: 5px;
+    }
+}
+
+@media(max-width : 490px) {
+    .metric-card {
+        padding: 25px 15px;
+    }
+
+    .navbar .left-section {
+        gap: 0;
+    }
+
+    .navbar .search-box {
+        width: 190px;
+        padding: 8px 8px 8px 40px;
+    }
+
+    .navbar .search-box img {
+        width: 13px;
+        height: 13px;
+    }
+
+    .navbar .search-box input {
+        font-size: 12px;
+    }
+
+    .sidebar.active,
+    .sidebar {
+        top: 55px;
+    }
+
+    .main-dashboard-container,
+    .referal-tool-container,
+    .earning-history-section {
+        top: 100px;
+    }
+
+    .breadcrumb-container {
+        top: 55px;
+    }
+
+    .referal-tool-container input,
+    .referal-tool-container .dropdown {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .referal-tool-container .cart-discount-section {
+        gap: 25px;
+    }
+
+    .referal-tool-container .btn {
+        width: 120px;
+    }
+
+    .product-coupan-section {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .product-coupan-section .product-image {
+        width: 60%;
+        height: 200px;
+    }
+
+    .product-coupan-section .product-info {
+        width: 100%;
+    }
+
+    .product-coupan-section-note {
+        margin-top: 0;
+        padding-left: 0;
+        font-size: small;
+    }
+
+    .modal-container {
+        width: 330px;
+        padding: 20px 15px;
+    }
+
+    .modal-title {
+        font-size: 18px;
+        margin-bottom: 18px;
+    }
+
+    .modal-description {
+        font-size: 14px;
+        margin-bottom: 30px;
+        padding-inline: 6px;
+    }
+}
+
+@media(max-width : 470px) {
+    .tab-item {
+        font-size: 12.5px;
+    }
+
+    .breadcrumb-container {
+        font-size: 13px;
+    }
+
+    .main-dashboard-container,
+    .referal-tool-container,
+    .earning-history-section {
+        top: 95px;
+    }
+
+    .metric-icon {
+        min-width: 28px;
+        height: 28px;
+    }
+
+    .metric-value {
+        gap: 8px;
+    }
+
+    .metric-number {
+        font-size: 28px;
+    }
+
+    .metric-period {
+        font-size: 12px;
+    }
+
+    .search-and-action-box {
+        gap: 10px;
+    }
+
+    .search-bar {
+        width: fit-content;
+        padding: 5px 8px;
+        display: flex;
+        align-items: center;
+    }
+
+    .search-bar img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .search-bar input {
+        width: 120px;
+        font-size: 12px;
+    }
+
+    .table-actions .control-btn {
+        width: 28px;
+        height: 28px;
+    }
+
+    .table-actions .control-btn img {
+        width: 12px;
+        height: 12px;
+    }
+
+    .pagination-btn {
+        width: 25px;
+        height: 25px;
+    }
+
+    .pagination-btn img {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+@media(max-width : 440px) {
+
+    .referal-tool-container input,
+    .referal-tool-container .dropdown {
+        width: 100%;
+    }
+
+    .referal-tool-container .cart-discount-fields {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .referal-tool-container .btn {
+        width: 100%;
+    }
+
+    .referal-tool-container .cart-discount-section {
+        gap: 25px;
+    }
+
+    .referal-tool-container .product-link-btn {
+        margin-top: 20px;
+    }
+
+    .product-coupan-fields {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .product-coupan-fields input {
+        width: 100%;
+        padding: 15px;
+        font-size: 13px;
+    }
+
+}
+
+@media(max-width : 410px) {
+    .metrics-grid {
+        padding-inline: 15%;
+    }
+
+    .navbar .search-box {
+        width: 160px;
+    }
+
+    .navbar .logo {
+        font-size: 14px;
+        margin-right: 8px;
+    }
+
+    .product-coupan-section .product-image {
+        width: 80%;
+    }
+}
+
+@media(max-width : 370px) {
+    .navbar {
+        padding: 8px;
+    }
+
+    .navbar .search-box {
+        width: 140px;
+        padding: 8px 4px 8px 32px;
+    }
+
+    .tab-item {
+        font-size: 11px;
+    }
+
+    .pagination-info,
+    .pagination-text {
+        font-size: 12px;
+    }
+
+    .modal-container {
+        width: 290px;
+    }
+
+    .modal-title {
+        font-size: 16px;
+    }
+
+    .modal-description {
+        font-size: 12px;
+    }
+
+    .modal-button {
+        padding: 10px 24px;
+        font-size: 13px;
+    }
+}
+
+@media(max-width : 320px) {
+    .navbar .menu-icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .main-dashboard-container,
+    .referal-tool-container,
+    .earning-history-section {
+        padding: 0 8px 20px 8px;
+    }
+
+    .search-bar input {
+        width: 90px;
+        font-size: 11px;
+    }
+
+    .pagination {
+        padding: 20px 10px;
+    }
+
+    .modal-container {
+        width: 240px;
+        padding: 15px 10px;
+    }
+
+    .modal-illustration img {
+        margin-bottom: 5px;
+        width: 130px;
+    }
+
+    .modal-title {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .modal-description {
+        font-size: 11px;
+        margin-bottom: 20px;
+        padding-inline: 2px;
+    }
+}

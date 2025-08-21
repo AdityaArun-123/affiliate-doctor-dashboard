@@ -1,0 +1,122 @@
+.dropdown {
+    max-width: 600px;
+    width: 60%;
+    position: relative;
+    background: #fff;
+    border: 2px solid lightgray;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.product-link-section .dropdown::before {
+    content: "Enter or Select the name of product you want to refer to your patient.";
+    position: absolute;
+    bottom: -25px;
+    left: 13px;
+    font-size: 12px;
+    color: gray;
+    cursor: pointer;
+    height: 18px;
+}
+
+.dropdown-label {
+    top: -8px;
+    left: 8px;
+    font-size: 12px;
+    background: white;
+    padding: 0 4px;
+    color: #333;
+    position: absolute;
+    pointer-events: none;
+}
+
+.dropdown-label span {
+    color: red;
+}
+
+.dropdown .selected-product {
+    visibility: hidden;
+}
+
+.dropdown img {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.dropdown-list {
+    display: none;
+    list-style: none;
+    padding: 10px 15px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid #ccc;
+    border-top: 2px solid #ccc;
+    background: #fff;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 10;
+}
+
+.dropdown-list.active {
+    display: block;
+}
+
+.dropdown-list li {
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.dropdown-list li:hover {
+    background: #f0f0f0;
+}
+
+.product-coupan-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.product-coupan-section .product-image {
+    min-width: 20%;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.product-coupan-section .product-info{
+    width: 70%;
+}
+
+.product-coupan-section .product-image img {
+    border-radius: 20px;
+}
+
+.field {
+    margin-bottom: 20px;
+}
+
+.label {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.product-coupan-fields {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.product-coupan-section-note {
+    margin-top: 15px;
+    padding-left: 25px;
+}
